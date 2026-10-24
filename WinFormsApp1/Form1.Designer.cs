@@ -39,6 +39,11 @@
             button1 = new Button();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -48,7 +53,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(130, 29);
             textBox1.TabIndex = 0;
-            textBox1.Text = "wielkość naczynia";
             // 
             // textBox2
             // 
@@ -57,7 +61,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(89, 29);
             textBox2.TabIndex = 1;
-            textBox2.Text = "  spirytus %";
             textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
@@ -67,7 +70,6 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(94, 29);
             textBox3.TabIndex = 2;
-            textBox3.Text = "  ilość sztuk";
             textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox5
@@ -77,7 +79,6 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(89, 29);
             textBox5.TabIndex = 4;
-            textBox5.Text = "%";
             textBox5.TextAlign = HorizontalAlignment.Center;
             textBox5.TextChanged += textBox5_TextChanged;
             // 
@@ -88,7 +89,6 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(90, 29);
             textBox6.TabIndex = 5;
-            textBox6.Text = "objętość";
             textBox6.TextAlign = HorizontalAlignment.Center;
             // 
             // label1
@@ -155,11 +155,63 @@
             comboBox2.Text = "Typowe napoje";
             comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(71, 97);
+            label4.Name = "label4";
+            label4.Size = new Size(133, 21);
+            label4.TabIndex = 12;
+            label4.Text = "wielkość naczynia";
+            label4.Click += label4_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(743, 95);
+            label5.Name = "label5";
+            label5.Size = new Size(23, 21);
+            label5.TabIndex = 13;
+            label5.Text = "%";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(589, 95);
+            label6.Name = "label6";
+            label6.Size = new Size(68, 21);
+            label6.TabIndex = 14;
+            label6.Text = "objętość";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(415, 95);
+            label7.Name = "label7";
+            label7.Size = new Size(89, 21);
+            label7.TabIndex = 15;
+            label7.Text = "  ilość sztuk";
+            label7.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(267, 95);
+            label8.Name = "label8";
+            label8.Size = new Size(90, 21);
+            label8.TabIndex = 16;
+            label8.Text = "  spirytus %";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
             Controls.Add(button1);
@@ -192,5 +244,10 @@
         private Button button1;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
     }
 }
